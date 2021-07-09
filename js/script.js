@@ -41,11 +41,10 @@ $(document).ready(function(){
     });
 
     
-    
 
     var skillsTopOffset = $(".skillsSection").offset().top;
 
-    $(window).scroll(function(){
+    $(window).on('scroll', function() {
         console.log(window.pageYOffset);
         if(window.pageYOffset > skillsTopOffset - $(window).height() + 50){
             $('.chart').easyPieChart({
