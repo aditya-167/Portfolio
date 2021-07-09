@@ -85,10 +85,20 @@ body {
 }
 
 .skillsSection{
-	background-color: #e74c3c;
+	background-color: #2d98da;
 	color: #fff;
 }
-/*
+div + h1{
+	font-size: 120%;
+	font-weight: 100;
+}
+
+h1 + p{
+	font-family: 'Yomogi', cursive;
+	font-size: 25px;
+	font-weight: 200;
+}
+
 .skill {
 	text-align: center;
 	margin-left: 10px;
@@ -101,6 +111,7 @@ body {
     display: inline-block;
     text-align: center;
 }
+
 
 .chart canvas {
 	position: absolute;
@@ -118,7 +129,7 @@ body {
 .chart .percent:after {
 	content: '%';
 }
-*/
+
 .aboutMeText{
 	font-size: 20px;
 }
