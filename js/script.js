@@ -18,6 +18,12 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
         items: 4,
+        autoplay:true,
+        dots: true,
+        smartSpeed: 1200,
+        slideTransition: 'linear',
+        autoplayHoverPause:true,
+        
         responsive:{
             0:{
                 items:1
@@ -34,15 +40,25 @@ $(document).ready(function(){
         }
     });
 
-    $('.chart').easyPieChart({
-        easing: 'easeInOut',
-        barColor: '#fff',
-        trackColor: false,
-        scaleColor: false,
-        lineWidth: 4,
-        size:152,
-        onStep: function(from, to, percent){
-            $(this.el).find('.percent').text(Math.round(percent));
+    
+    
+
+    var skillsTopOffset = $(".skillsSection").offset().top;
+
+    $(window).scroll(function(){
+        console.log(window.pageYOffset);
+        if(window.pageYOffset > skillsTopOffset - $(window).height() + 50){
+            $('.chart').easyPieChart({
+                easing: 'easeInOut',
+                barColor: '#fff',
+                trackColor: false,
+                scaleColor: false,
+                lineWidth: 4,
+                size:152,
+                onStep: function(from, to, percent){
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
         }
     });
     
