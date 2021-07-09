@@ -14,10 +14,13 @@ $(document).ready(function(){
         backDelay:2000
 
     });
+    /*
     
     $('.owl-carousel').owlCarousel({
         loop:true,
         items: 4,
+        nav: true,
+        margin: 10,
         responsive:{
             0:{
                 items:1
@@ -45,6 +48,5 @@ $(document).ready(function(){
             $(this.el).find('.percent').text(Math.round(percent));
         }
     });
-    
-    var skillsTopOffset = $('.skillsSection').
+*/    
 });
