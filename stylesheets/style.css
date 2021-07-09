@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yomogi&family=Zen+Loop&display=swap');
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
 	font-size: 14px;
     color: #333;
@@ -41,7 +50,7 @@ body {
     width: 100%;
     height: 250px;
     top: 50%;
-    z-index: 5;
+    z-index: 6;
     text-align: center;
     margin-top: -125px;
 }
@@ -59,10 +68,11 @@ body {
 }
 
 .titleMessage .heading .sub {
-	font-family: 'Zen Loop', cursive;
+	font-family: 'Yomogi', cursive;
+	text-shadow: 0.3px 0.3px 0.3px 0.3px #000;
 	font-size: 40px;
-	color: #f7d794;
-	font-weight:900;
+	color: #F7EA78;
+	font-weight:500;
 }
 
 .section {
@@ -78,7 +88,7 @@ body {
 	background-color: #e74c3c;
 	color: #fff;
 }
-
+/*
 .skill {
 	text-align: center;
 	margin-left: 10px;
@@ -108,7 +118,7 @@ body {
 .chart .percent:after {
 	content: '%';
 }
-
+*/
 .aboutMeText{
 	font-size: 20px;
 }
