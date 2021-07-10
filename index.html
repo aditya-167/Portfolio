@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aditya's Portfolio</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="stylesheets/superslides.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
@@ -14,6 +16,15 @@
     </head>
     <body>
         
+        <div class="loader">
+            <div class="inner">
+                <div class="loading">
+                    ...Loading...
+                </div>
+            </div>
+        </div>
+
+
         <div id="slides">
             <div class="overlay"></div>
             <div class="slides-container">
@@ -40,9 +51,11 @@
            
         
         </div>
-        <nav id="navigation" class="navbar navbar-expand-lg navbar-expand-sm navbar-expand-md navbar-expand-x">
+
+        
+        <nav id="navigation" class="navbar navbar-expand-lg">
+            <a class="navbar-brand brandItems" href="#slides">Aditya Srichandan</a>
             
-            <a class="navbar-brand" href="#slides">Aditya Srichandan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,26 +63,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link navItems" href="#about">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navItems">
                   <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navItems">
                     <a class="nav-link" href="#">Tutorials</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item navItems">
                     <a class="nav-link" href="#">Contact Me</a>
                 </li>
                 
               </ul>
             </div>
-          </nav>
+        </nav>
 
         <div id="about" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 text-center">
                         <img class="aboutImage" src="img/aditya.jpg" alt="aditya">
                         <div class="middle">
                             <a href="files/arxivRCL.pdf">
@@ -199,17 +212,17 @@
 
         <div class="copyrightsection">
             <div class="col-md-12 text-center">
-                <p>&copy; Copyright Aditya Srichandan 2021</p>
+                <p>&copy; Copyright 2021</p>
             </div>
         </div>
-        
+        <script src="js/script.js"></script>
         <script src="js/jquery.easypiechart.min.js"></script>
         <script src="js/jquery.superslides.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="js/typed.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-        <script src="js/script.js"></script>
         <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js" type="text/javascript"></script>
         
         

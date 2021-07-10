@@ -1,4 +1,14 @@
+$(window).on("load",function(){
+    $(".loader .inner").fadeOut(2500,function(){
+        $(".loader").fadeOut(2700);
+    });
+})
+
 $(document).ready(function(){
+    $(window).on('beforeunload', function() {
+    $('body').hide();
+    $(window).scrollTop(0);
+  });
     $('#slides').superslides({
         animation: 'fade',
         play: 5000,
@@ -81,4 +91,6 @@ $(document).ready(function(){
         }
 
     }
+
+
 });

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&family=Zen+Loop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Yomogi&family=Zen+Loop&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
 html,body
 {
@@ -15,15 +15,19 @@ body {
     background-color: #fff;
     letter-spacing: 1px;
 }
-
+.brandItems{
+	font-weight: 700;
+	font-size: 22px;
+}
+.navItems{
+		font-size: 17px;
+}
 
 .middle{
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	position: relative;
 	text-align: center;
-	margin-top: 75px;
-	margin-left: 200px;
+	margin-top: 40px;
+
   }
   .btn{
 	background: none;
@@ -131,8 +135,9 @@ body {
 }
 
 .aboutImage {
-	max-width: 80%;
+	width: 80%;
 	border-radius: 80%;
+	position: relative;
 }
 
 .skillsSection{
@@ -251,12 +256,16 @@ span + h2 + p{
 	width: 100%;
 }
 
+
 #navigation li{
 	padding: 0 10px;
 }
 .navbar-toggler-icon{
-	background:url('../img/icons/hamburger.png');
+	background:url("https://img.icons8.com/material-outlined/24/ffffff/squared-menu.png");
 	background-size: 100%;
+}
+.navbar-collapse.in {
+    display: block !important;
 }
 #navigation li a{
 	color: #fff;
@@ -264,15 +273,41 @@ span + h2 + p{
 .navbar-brand,.navbar-brand:hover{
 	color: #fff;
 }
-.navbar-toggler-icon{
-	background:url('../img/icons/hamburger.png');
-	z-index: 10;
-}
+
 
 .fixedNav #navigation{
 	position: fixed;
 	top: 0;
 }
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+
+}
+
+.loading{
+	font-family: 'Grand Hotel', cursive;
+	color: #39A2DB;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 120vh;
+	margin:0;
+	margin-top: 40px;
+	overflow: hidden;
+	font-size: 50px;
+}
 
 
+.loader .inner{
+	width: 100%;
+	height: 100%;
+	background: url("../img/icons/preload.gif") center center no-repeat;
+}
 
