@@ -13,6 +13,9 @@
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
         <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.min.css"> 
         <link rel='shortcut icon' type='image/x-icon' href='img/icons/favicon.ico' />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
     </head>
     <body>
         
@@ -59,9 +62,9 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
+            
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav navbar-center-custom">
                 <li class="nav-item active">
                   <a class="nav-link navItems" href="#about">About</a>
                 </li>
@@ -72,7 +75,7 @@
                     <a class="nav-link" href="#">Tutorials</a>
                 </li>
                 <li class="nav-item navItems">
-                    <a class="nav-link" href="#">Contact Me</a>
+                    <a class="nav-link" href="#contactMe">Contact Me</a>
                 </li>
                 
               </ul>
@@ -210,11 +213,49 @@
 
         </div>
 
-        <div class="copyrightsection">
+        <div id="contactMe" class="section-4">
+            <h1 class="section-4-heading">
+                LET'S TALK
+            </h1>
+            <form class="contact-form center">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="submit" class="contact-form-btn">
+
+            </form>
+        </div>
+
+        <div id="footer" class="section-5 center">
+            <div class="social-media">
+                <a href="" class="social-media-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="" class="social-media-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" class="social-media-link">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="" class="social-media-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="social-media-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+            <p class="copyright">
+                Copyright &copy; All Rights Reserved
+            </p>
+        </div>
+        <!--        <div class="copyrightsection">
             <div class="col-md-12 text-center">
                 <p>&copy; Copyright 2021</p>
             </div>
-        </div>
+        </div>-->
+
+
         <script src="js/script.js"></script>
         <script src="js/jquery.easypiechart.min.js"></script>
         <script src="js/jquery.superslides.min.js"></script>
