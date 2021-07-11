@@ -9,6 +9,7 @@ html,body
     margin: 0px;
     padding: 0px; 
 	text-decoration: none;
+	
 }
 body {
 	font-size: 14px;
@@ -24,6 +25,8 @@ body {
 .navItems{
 		font-size: 17px;
 }
+
+
 
 .navbar .navbar-nav .nav-link {
 	color: #fff;
@@ -546,4 +549,27 @@ textarea{
 
 .items{
 	padding: 0;
+}
+
+
+::-webkit-scrollbar{
+	width: 15px;
+}
+
+::-webkit-scrollbar-track{
+	border-radius: 8px;
+	box-shadow: inset 0 0 10px rgba(0,0,0,.0.3)
+}
+::-webkit-scrollbar-thumb{
+	
+	border-radius: 8px;
+	border-color: #000;
+	border: 1px;
+	background-color:rgb(187, 231, 82);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	border-color: #000;
+	border: 1px;
+	background-color:rgb(192, 228, 135)
 }
