@@ -8,10 +8,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="stylesheets/superslides.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-        <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.min.css"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/superslides.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/owl.carousel.min.css"/> 
         <link rel='shortcut icon' type='image/x-icon' href='img/icons/favicon.ico' />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -68,10 +68,10 @@
                   <a class="nav-link navItems" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item navItems">
-                  <a class="nav-link" href="#">Tutorials</a>
+                  <a class="nav-link" target="_blank" href="http://localhost:3000">Tutorials</a>
                 </li>
                 <li class="nav-item navItems">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="https://medium.com/@adityasrichandan3098">Blog</a>
                 </li>
                 <li class="nav-item navItems">
                     <a class="nav-link" href="#contactMe">Contact Me</a>
@@ -336,16 +336,38 @@
         </div>
 
         <div id="contactMe" class="section-4">
-            <h1 class="section-4-heading">
-                LET'S TALK
-            </h1>
-            <form class="contact-form center">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <input type="submit" value="submit" class="contact-form-btn">
+            <div id="card">
+                <div id="card-content">
+                    <div id="card-title">
+                        <h2>LET'S TALK</h2>
+                    </div>
+                    <form class="form">
+                        <label for="user-email" styles={{paddingTop:'50px'}}>
+                            &nbsp;
+                        </label>
+                        <input id="user-email" class="form-content" placeholder = "Name" type="text" name = "name" autoComplete="on" required />
+                        <div class="form-border"></div>
+                        
+                        <label for="user-password" styles={{paddingTop:'50px'}}>&nbsp;
+                        </label>
+                        <input id="user-password" class="form-content" placeholder = "Email" name="email" type="password" required />
+                        <div class="form-border"></div>
+                        
+                        <label for="user-password" styles={{paddingTop:'50px'}}>&nbsp;
+                        </label>
+                        <div class="form-border-ta">
+                            <textarea id="user-password" class="form-content" placeholder = "Message" name="message" type="text-area" required rows="2" cols="44"></textarea>
+                        </div>
+                        
+                        
+                        
+                        <button id="submit-btn" type="submit" value="Submit" >Submit</button>
 
-            </form>
+                        
+        
+                    </form>
+                </div>
+            </div>
         </div>
 
         <footer id="footer" class="section-5">
